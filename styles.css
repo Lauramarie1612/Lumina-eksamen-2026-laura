@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Antonio:wght@400;700&family=Bebas+Neue&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
 
 /* --- General Settings --- */
         :root {
@@ -89,7 +89,7 @@ body {
         }
 
         h1 {
-            font-family: 'Antonio', sans-serif; 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
             font-size: 6rem;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -152,7 +152,7 @@ body {
 }
 
 .sub-heading {
-    font-family: 'Antonio', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -162,7 +162,7 @@ body {
 }
 
 .headline-sub {
-    font-family: 'Antonio', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2rem;;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -170,7 +170,7 @@ body {
 }
 
 .main-heading {
-    font-family: 'Antonio', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -241,7 +241,7 @@ body {
 
 body {
     background: #d8c2a7;
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .reviews {
@@ -313,7 +313,7 @@ body {
 }
 
 .hero-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 6rem;
     color: white;
     margin-bottom: 10px;
@@ -467,7 +467,7 @@ body {
 }
 
 .info-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3.5rem;
     color: #3D3529;
     margin-bottom: 30px;
@@ -528,7 +528,7 @@ body {
 }
 
 .split-text h1 {
-  font-family: 'Antonio', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2rem; 
   color: #3D3529;
   text-transform: uppercase;
@@ -586,7 +586,7 @@ body {
             margin-bottom: 30px;
             margin-top: 0;
             letter-spacing: 2px;
-            font-family: 'Oswald', sans-serif; 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
         }
 
 
@@ -807,7 +807,7 @@ footer .copyright {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -945,7 +945,7 @@ body.home-page { padding: 0; background: #e8e5e2; color: #342f2b; }
     border: 0;
     border-radius: 0;
     color: white;
-    font: 600 16px 'Inter', sans-serif;
+    font: 600 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
@@ -963,7 +963,7 @@ body.home-page { padding: 0; background: #e8e5e2; color: #342f2b; }
 .hero-rating p { font-size: 9px; letter-spacing: 1.3px; margin-top: 3px; }
 .bloom-product { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 5%; padding: 60px 5% 60px 3%; background: #e8e5e2; scroll-margin-top: 20px; }
 .bloom-image img { display: block; width: 100%; max-width: 560px; height: auto; margin: auto; }
-.home-page .bloom-details h1 { font-family: 'Inter', sans-serif; font-size: 25px; font-weight: 700; letter-spacing: 0; text-align: left; color: #342f2b; margin: 0 0 4px; opacity: 1; }
+.home-page .bloom-details h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 25px; font-weight: 700; letter-spacing: 0; text-align: left; color: #342f2b; margin: 0 0 4px; opacity: 1; }
 .bloom-subtitle { font-size: 16px; }
 .bloom-price { font-size: 22px; font-style: italic; margin: 14px 0 24px; }
 .bloom-description { font-size: 16px; font-weight: 300; line-height: 1.25; max-width: 470px; }
