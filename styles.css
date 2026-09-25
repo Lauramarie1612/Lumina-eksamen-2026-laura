@@ -34,19 +34,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Baggrundsbilledet slutter efter forsidens første skærm */
-.home-page .hero-section {
-    flex-shrink: 0;
-    min-height: 100vh;
-    min-height: 100svh;
-    margin: -20px -40px 0;
-    padding: 20px 40px 60px;
-    background-image: url('images/herobillede.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
         /* --- Header / Navigation --- */
         header {
             display: flex;
@@ -928,4 +915,92 @@ color: #3D3529;
 /* Ensure main content fills available height */
 main {
   flex: 1 0 auto;
+}
+
+/* Forside efter designreferencen */
+body.home-page { padding: 0; background: #e8e5e2; color: #342f2b; }
+.home-page .hero-section {
+    position: relative;
+    flex-shrink: 0;
+    min-height: 560px;
+    height: 66vw;
+    max-height: 100svh;
+    background: #969792 url('images/herobillede.webp') center center / cover no-repeat;
+    color: white;
+}
+.home-page .home-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 24px;
+    padding: 28px 4%;
+    margin: 0;
+}
+.home-header nav { display: flex; gap: clamp(18px, 4vw, 38px); }
+.home-header .nav-right { justify-content: flex-end; }
+.home-page .home-header nav a,
+.home-header nav button {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: white;
+    font: 600 16px 'Inter', sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.home-header nav a:hover, .home-header nav button:hover { text-decoration: underline; text-underline-offset: 5px; }
+.home-page .home-logo { font-family: 'Antonio', sans-serif; font-size: 46px; font-weight: 700; color: white; text-decoration: none; letter-spacing: 2px; }
+.hero-copy { position: absolute; left: 4%; top: 53%; width: 245px; }
+.hero-copy p { font-size: 19px; line-height: 1.5; margin: 0 0 17px; }
+.hero-button { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 26px; border-radius: 7px; background: #342f2b; color: white; font-size: 16px; font-weight: 600; text-decoration: none; }
+.hero-button:hover, .home-page .bloom-buy:hover { background: #51483f; }
+.hero-button span { font-size: 22px; font-weight: 300; line-height: 1; }
+.hero-rating { position: absolute; right: 1.5%; bottom: 16px; text-align: right; }
+.hero-rating > div { font-size: 27px; letter-spacing: 3px; }
+.hero-rating span { opacity: .6; }
+.hero-rating p { font-size: 9px; letter-spacing: 1.3px; margin-top: 3px; }
+.bloom-product { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 5%; padding: 60px 5% 60px 3%; background: #e8e5e2; scroll-margin-top: 20px; }
+.bloom-image img { display: block; width: 100%; max-width: 560px; height: auto; margin: auto; }
+.home-page .bloom-details h1 { font-family: 'Inter', sans-serif; font-size: 25px; font-weight: 700; letter-spacing: 0; text-align: left; color: #342f2b; margin: 0 0 4px; opacity: 1; }
+.bloom-subtitle { font-size: 16px; }
+.bloom-price { font-size: 22px; font-style: italic; margin: 14px 0 24px; }
+.bloom-description { font-size: 16px; font-weight: 300; line-height: 1.25; max-width: 470px; }
+.bloom-more { display: inline-block; color: inherit; font-size: 16px; font-weight: 300; font-style: italic; text-decoration: none; margin-top: 7px; }
+.bloom-more:hover { text-decoration: underline; }
+.bloom-colors { margin-top: 40px; }
+.bloom-colors p { font-size: 16px; }
+.bloom-colors em { font-weight: 300; }
+.color-options { display: flex; gap: 8px; margin-top: 10px; }
+.color-option { width: 30px; height: 30px; border: 1px solid #a69a90; border-radius: 50%; cursor: pointer; box-shadow: 0 2px 2px #0003; }
+.color-option.sage { background: #d2deca; border-color: #94ac84; }
+.color-option.rose { background: #dfa08f; }
+.color-option.sand { background: #e3cfb9; }
+.color-option.blue { background: #cce5ed; border-color: #7a9aa5; }
+.color-option[aria-pressed="true"] { box-shadow: 0 0 0 2px #e8e5e2, 0 0 0 3px #79766d; }
+.home-page .bloom-buy { display: block; width: 280px; max-width: 100%; margin: 28px 0 0; padding: 11px 20px; border: 0; border-radius: 6px; background: #342f2b; color: white; font-size: 16px; font-weight: 600; cursor: pointer; }
+.home-page :is(a, button, input):focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.product-search { margin: auto; padding: 28px; border: 0; border-radius: 8px; width: min(90vw, 450px); }
+.product-search::backdrop { background: #0006; }
+.product-search label, .product-search input { display: block; width: 100%; margin-bottom: 16px; }
+.product-search input, .product-search button { padding: 10px; }
+@media (min-width: 1200px) {
+    .hero-copy { width: 300px; }
+    .hero-copy p { font-size: 23px; }
+    .bloom-product { padding-left: 8%; padding-right: 8%; }
+}
+@media (max-width: 700px) {
+    .home-page .hero-section { height: 85svh; min-height: 640px; max-height: none; background-position: 55% center; }
+    .home-page .home-header { grid-template-columns: 1fr 1fr; gap: 18px; padding: 20px; }
+    .home-page .home-logo { grid-column: 1 / -1; grid-row: 1; text-align: center; font-size: 38px; }
+    .home-header nav { gap: 15px; flex-wrap: wrap; }
+    .home-page .home-header nav a, .home-header nav button { font-size: 13px; }
+    .hero-copy { top: auto; bottom: 76px; left: 20px; width: 235px; }
+    .hero-copy p { font-size: 17px; text-shadow: 0 1px 5px #0009; }
+    .hero-rating { right: 20px; }
+    .bloom-product { grid-template-columns: 1fr; gap: 0; padding: 20px 24px 45px; }
+    .bloom-image img { max-width: 380px; }
+    .bloom-colors { margin-top: 28px; }
+    .home-page .bloom-buy { width: 100%; }
 }

@@ -66,7 +66,7 @@ function generateReviewCards() {
 }
 
 // Generer cards
-generateReviewCards();
+if (container) generateReviewCards();
 
 // Vis toast når et "Køb nu" trykkes
 function showCartToast(message = 'Produktet er tilføjet til indkøbskurven') {
@@ -111,3 +111,40 @@ function initBuyButtons() {
 // Init ved load + re-init hvis DOM senere ændres
 document.addEventListener('DOMContentLoaded', initBuyButtons);
 // Hvis du dynamisk indsætter produkter kan du køre initBuyButtons() igen efter indsættelse
+
+// Farvevalg på forsiden
+const colorButtons = document.querySelectorAll('.color-option');
+colorButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    colorButtons.forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+    const color = button.getAttribute('aria-label');
+    document.getElementById('bloom-image').src = 'images/' + button.dataset.image;
+    document.getElementById('bloom-image').alt = 'Lumina Bloom i ' + color;
+    document.getElementById('bloom-color').textContent = color;
+  });
+});
+const searchDialog = document.getElementById('product-search');
+if (searchDialog) {
+  document.getElementById('search-toggle').addEventListener('click', () => searchDialog.showModal());
+  document.getElementById('search-close').addEventListener('click', () => searchDialog.close());
+  document.getElementById('search-form').addEventListener('submit', event => {
+    event.preventDefault();
+    const query = document.getElementById('search-input').value.trim().toLowerCase();
+    const match = [...colorButtons].find(button => button.getAttribute('aria-label').toLowerCase().includes(query));
+    if (query && (match || /lumina|bloom|højtaler/.test(query))) {
+      if (match) match.click();
+      searchDialog.close();
+      document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
+    } else {
+      document.getElementById('search-result').textContent = 'Ingen produkter fundet. Prøv Lumina Bloom eller en farve.';
+    }
+  });
+  let cartCount = 0;
+  document.querySelector('.bloom-buy').addEventListener('click', () => {
+    cartCount += 1;
+    document.getElementById('cart-toggle').textContent = 'Kurv (' + cartCount + ')';
+  });
+  document.getElementById('cart-toggle').addEventListener('click', () => {
+    showCartToast(cartCount ? 'Du har ' + cartCount + ' højtaler(e) i kurven' : 'Din indkøbskurv er tom');
+  });
+}
