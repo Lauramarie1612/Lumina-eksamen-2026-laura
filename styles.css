@@ -34,6 +34,19 @@ body {
   overflow-x: hidden;
 }
 
+/* Baggrundsbilledet slutter efter forsidens første skærm */
+.home-page .hero-section {
+    flex-shrink: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    margin: -20px -40px 0;
+    padding: 20px 40px 60px;
+    background-image: url('images/herobillede.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
         /* --- Header / Navigation --- */
         header {
             display: flex;
@@ -916,5 +929,3 @@ color: #3D3529;
 main {
   flex: 1 0 auto;
 }
-
-
