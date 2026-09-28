@@ -629,16 +629,19 @@ body {
 /* Grid styling */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 42px;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    align-items: start;
 }
 
 /* Images */
 .gallery-image {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
+    height: auto;
 }
 
 /* Instagram box */
