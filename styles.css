@@ -510,12 +510,26 @@ body {
   color: #3D3529;
 }
 
-.split-text h1.display-heading {
+.split-text h1.headline-left {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2rem; 
-  color: #3D3529;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ed4bd2;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  opacity: 1;
+}
+
+.split-text .headline-sub {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 700;
+  color: #342f2b;
+  text-align: left;
+  line-height: 1.1;
+  letter-spacing: 0;
   margin-bottom: 20px;
 }
 
