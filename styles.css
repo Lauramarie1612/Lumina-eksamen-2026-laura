@@ -723,6 +723,58 @@ footer {
     font-size: 14px;
 }
 
+.footer-brand {
+    flex: 0 0 190px;
+}
+
+.footer-content .footer-logo {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 64px;
+}
+
+.footer-brand label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.footer-newsletter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid currentColor;
+}
+
+.footer-newsletter svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.footer-newsletter input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-size: 12px;
+}
+
+.footer-newsletter button {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    background: transparent;
+    color: inherit;
+    font-size: 18px;
+    line-height: 1;
+}
+
 /* Payment methods */
 .payment-icons {
   position: absolute;
