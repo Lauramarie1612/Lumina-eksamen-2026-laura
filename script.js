@@ -53,7 +53,7 @@ function generateReviewCards() {
 
         card.innerHTML = `
             <div class="stars">${"★".repeat(review.stars)}</div>
-            <h1 class="tertiary-heading">${review.title}</h1>
+            <h3 class="tertiary-heading">${review.title}</h3>
             <p>${review.text}</p>
             <div class="footer">
                 <span class="name">${review.name}</span>

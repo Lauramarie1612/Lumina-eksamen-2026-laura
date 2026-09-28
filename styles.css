@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
 
-/* Overskrifternes størrelser bevares, selvom alle bruger h1. */
-:where(h1.secondary-heading) { font-size: 1.5em; }
-:where(h1.tertiary-heading) { font-size: 1.17em; }
+/* Overskriftsstørrelser er uafhængige af HTML-niveau. */
+:where(.secondary-heading) { font-size: 1.5em; }
+:where(.tertiary-heading) { font-size: 1.17em; }
 
 /* --- General Settings --- */
         :root {
@@ -92,7 +92,7 @@ body {
             margin: 0 auto;
         }
 
-        h1.display-heading {
+        .display-heading {
             font-family: 'Antonio', sans-serif; 
             font-size: 6rem;
             text-transform: uppercase;
@@ -133,7 +133,7 @@ body {
 
         /* --- Responsivitet (Mobil) --- */
         @media (max-width: 768px) {
-            h1.display-heading { font-size: 3.5rem; }
+            .display-heading { font-size: 3.5rem; }
             header { flex-direction: column; gap: 20px; }
             nav { flex-wrap: wrap; justify-content: center; }
         }
@@ -270,7 +270,7 @@ body {
     margin-bottom: 10px;
 }
 
-.card h1 {
+.card h3 {
     margin: 0 0 10px;
     font-size: 14px;
     color: black;
@@ -512,7 +512,7 @@ body {
   color: #3D3529;
 }
 
-.split-text h1.headline-left {
+.split-text p.headline-left {
   font-family: 'Antonio', sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -594,7 +594,7 @@ body {
         }
 
         /* --- Heading Styling --- */
-        h1.section-title {
+        .section-title {
             font-size: 3rem; /* Large text */
             text-transform: uppercase;
             font-weight: 700;
@@ -608,7 +608,7 @@ body {
 
         /* Mobile adjustment */
         @media (max-width: 768px) {
-            h1.section-title {
+            .section-title {
                 font-size: 2rem; /* Smaller text on mobile */
             }
         }
@@ -619,7 +619,7 @@ body {
     padding: 40px 20px;
 }
 
-.gallery-section h1.display-heading {
+.gallery-section .display-heading {
     text-align: center;
     font-size: 48px;
     margin-bottom: 40px;
@@ -651,7 +651,7 @@ body {
         padding: 32px 24px;
     }
 
-    .gallery-section > h1.display-heading {
+    .gallery-section > .display-heading {
         font-size: clamp(28px, 6vw, 36px);
         line-height: 1.2;
         letter-spacing: 1px;
@@ -713,7 +713,7 @@ footer {
     margin-bottom: 28px;
 }
 
-.footer-content h1 {
+.footer-content h2 {
     font-size: 21px;
     letter-spacing: 1px;
     margin-bottom: 26px;
@@ -940,7 +940,7 @@ background-color: #f5f0e6;
 color: #3D3529;
 }
 
-.text-block h1 {
+.text-block h2 {
     margin-top: 20px;
     font-size: 22px;
     color: #3D3529;
@@ -1080,8 +1080,8 @@ body.home-page { padding: 0; background: #e8e5e2; color: #342f2b; }
     .home-page .bloom-buy { width: 100%; }
 }
 
-/* Alle h1-overskrifter bruger Antonio Bold. */
-h1 {
+/* Overskrifter og logo bevarer Antonio Bold på alle niveauer. */
+h1, h2, h3, .footer-logo {
     font-family: 'Antonio', sans-serif;
     font-weight: 700;
 }
