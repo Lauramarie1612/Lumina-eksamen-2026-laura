@@ -692,6 +692,7 @@ body {
 /* FOOTER STYLING */
 footer {
   --footer-field-color: #c3c1bd;
+  flex-shrink: 0;
   width: calc(100% - 20px);
   position: relative;
   box-sizing: border-box;
