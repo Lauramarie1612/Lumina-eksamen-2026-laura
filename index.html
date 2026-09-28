@@ -1,185 +1,248 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lumina Bloom</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="home-page">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
     <div class="hero-section">
-        <header class="home-header">
-            <nav class="nav-left" aria-label="Hovedmenu">
-                <a href="#shop">Shop</a>
-                <a href="about.html">Om os</a>
-                <a href="#produktinfo">Produktinfo</a>
-            </nav>
-            <a class="home-logo" href="index.html" aria-label="Lumina – forside">LUMINA</a>
-            <nav class="nav-right" aria-label="Hjælp og indkøb">
-                <a href="#kontakt">Kontakt</a>
-                <button type="button" id="search-toggle">Søg</button>
-                <button type="button" id="cart-toggle">Kurv</button>
-            </nav>
-        </header>
-        <div class="hero-copy">
-            <p>Portabel højtaler med 18 timers spilletid og kraftfuld lyd. Designet til at følge din livsstil.</p>
-            <a class="hero-button" href="#shop">Udforsk højtaleren <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="hero-rating" aria-label="4,5 ud af 5 baseret på 470 anmeldelser">
-            <div aria-hidden="true">★★★★<span>★</span></div>
-            <p>4,5/5 ★ 470 anmeldelser</p>
-        </div>
+      <header class="home-header">
+        <nav class="nav-left" aria-label="Hovedmenu">
+          <a href="#shop">Shop</a>
+          <a href="about.html">Om os</a>
+          <a href="#produktinfo">Produktinfo</a>
+        </nav>
+        <a class="home-logo" href="index.html" aria-label="Lumina – forside"
+          >LUMINA</a
+        >
+        <nav class="nav-right" aria-label="Hjælp og indkøb">
+          <a href="#kontakt">Kontakt</a>
+          <button type="button" id="search-toggle">Søg</button>
+          <button type="button" id="cart-toggle">Kurv</button>
+        </nav>
+      </header>
+      <div class="hero-copy">
+        <p>
+          Portabel højtaler med 18 timers spilletid og kraftfuld lyd. Designet
+          til at følge din livsstil.
+        </p>
+        <a class="hero-button" href="#shop"
+          >Udforsk højtaleren <span aria-hidden="true">→</span></a
+        >
+      </div>
+      <div
+        class="hero-rating"
+        aria-label="4,5 ud af 5 baseret på 470 anmeldelser"
+      >
+        <div aria-hidden="true">★★★★<span>★</span></div>
+        <p>4,5/5 ★ 470 anmeldelser</p>
+      </div>
     </div>
 
     <section class="bloom-product" id="shop" aria-labelledby="bloom-title">
-        <div class="bloom-image"><img id="bloom-image" src="images/greenlumina.png" alt="Lumina Bloom i Sage Green"></div>
-        <div class="bloom-details">
-            <h1 id="bloom-title">LUMINA BLOOM</h1>
-            <p class="bloom-subtitle">Bluetooth højtaler</p>
-            <p class="bloom-price">1995 DKK</p>
-            <p class="bloom-description">Kraftfuld lyd i et blødt og minimalistisk design. Op til 18 timers spilletid, justerbart LED-lys og Social Connect. Skabt til at dele musikken, hvor du er.</p>
-            <a class="bloom-more" href="#produktinfo">Læs mere</a>
-            <div class="bloom-colors">
-                <p>Farve - <em id="bloom-color" aria-live="polite">Sage Green</em></p>
-                <div class="color-options" role="group" aria-label="Vælg farve">
-                    <button class="color-option sage" aria-label="Sage Green" aria-pressed="true" data-image="greenlumina.png"></button>
-                    <button class="color-option rose" aria-label="Dusty Rose" aria-pressed="false" data-image="dustyrose.png"></button>
-                    <button class="color-option sand" aria-label="Moonlight White" aria-pressed="false" data-image="beigelumina.png"></button>
-                    <button class="color-option blue" aria-label="Lavender Mist" aria-pressed="false" data-image="blaacard.png"></button>
-                </div>
-            </div>
-            <button class="buy-button bloom-buy">Køb nu</button>
+      <div class="bloom-image">
+        <img
+          id="bloom-image"
+          src="images/greenlumina.png"
+          alt="Lumina Bloom i Sage Green"
+        />
+      </div>
+      <div class="bloom-details">
+        <h1 id="bloom-title">LUMINA BLOOM</h1>
+        <p class="bloom-subtitle">Bluetooth højtaler</p>
+        <p class="bloom-price">1995 DKK</p>
+        <p class="bloom-description">
+          Kraftfuld lyd i et blødt og minimalistisk design. Op til 18 timers
+          spilletid, justerbart LED-lys og Social Connect. Skabt til at dele
+          musikken, hvor du er.
+        </p>
+        <a class="bloom-more" href="#produktinfo">Læs mere</a>
+        <div class="bloom-colors">
+          <p>Farve - <em id="bloom-color" aria-live="polite">Sage Green</em></p>
+          <div class="color-options" role="group" aria-label="Vælg farve">
+            <button
+              class="color-option sage"
+              aria-label="Sage Green"
+              aria-pressed="true"
+              data-image="greenlumina.png"
+            ></button>
+            <button
+              class="color-option rose"
+              aria-label="Dusty Rose"
+              aria-pressed="false"
+              data-image="dustyrose.png"
+            ></button>
+            <button
+              class="color-option sand"
+              aria-label="Moonlight White"
+              aria-pressed="false"
+              data-image="beigelumina.png"
+            ></button>
+            <button
+              class="color-option blue"
+              aria-label="Lavender Mist"
+              aria-pressed="false"
+              data-image="blaacard.png"
+            ></button>
+          </div>
         </div>
+        <button class="buy-button bloom-buy">Køb nu</button>
+      </div>
     </section>
     <dialog id="product-search" class="product-search">
-        <form id="search-form">
-            <label for="search-input">Søg efter Lumina Bloom eller en farve</label>
-            <input id="search-input" type="search" placeholder="Sage Green" required>
-            <button type="submit">Søg</button>
-            <button type="button" id="search-close">Luk</button>
-            <p id="search-result" role="status"></p>
-        </form>
+      <form id="search-form">
+        <label for="search-input">Søg efter Lumina Bloom eller en farve</label>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Sage Green"
+          required
+        />
+        <button type="submit">Søg</button>
+        <button type="button" id="search-close">Luk</button>
+        <p id="search-result" role="status"></p>
+      </form>
     </dialog>
 
     <!-- Produktinformation -->
-    <section class="product-info-section" id="produktinfo" aria-labelledby="info-title">
-        <h2 class="info-title" id="info-title">PRODUKTINFORMATION</h2>
-        <div class="info-panel">
-            <ul class="info-list">
-                <li>Lydstyrke: Op til 100 dB</li>
-                <li>Vandafvisende: IPX5</li>
-                <li>Batteritid: 18 timers spilletid</li>
-                <li>Vægt: 4,5 kg</li>
-                <li>Mål: 32 × 15 × 16 cm (B × H × D)</li>
-                <li>Tilslutning: Bluetooth 5.3 og AUX</li>
-            </ul>
-            <details class="info-extra">
-                <summary>Flere specifikationer og information</summary>
-                <ul class="info-list">
-                    <li>Bløde former, stofbeklædt front og subtile LED-lys, der følger musikken. LED-lystemaet kan ændres i appen.</li>
-                    <li>Genopladeligt batteri via USB-C. Oplader medfølger.</li>
-                    <li>Mulighed for at parre op til 3 andre LUMINA One-enheder.</li>
-                    <li>Social Connect gør det nemt at blande din playliste med andres via appen.</li>
-                    <li>Stof-totebag i 100 % genanvendt bomuld medfølger.</li>
-                </ul>
-            </details>
-        </div>
+    <section
+      class="product-info-section"
+      id="produktinfo"
+      aria-labelledby="info-title"
+    >
+      <h2 class="info-title" id="info-title">PRODUKTINFORMATION</h2>
+      <div class="info-panel">
+        <ul class="info-list">
+          <li>Lydstyrke: Op til 100 dB</li>
+          <li>Vandafvisende: IPX5</li>
+          <li>Batteritid: 18 timers spilletid</li>
+          <li>Vægt: 4,5 kg</li>
+          <li>Mål: 32 × 15 × 16 cm (B × H × D)</li>
+          <li>Tilslutning: Bluetooth 5.3 og AUX</li>
+        </ul>
+        <details class="info-extra">
+          <summary>Flere specifikationer og information</summary>
+          <ul class="info-list">
+            <li>
+              Bløde former, stofbeklædt front og subtile LED-lys, der følger
+              musikken. LED-lystemaet kan ændres i appen.
+            </li>
+            <li>Genopladeligt batteri via USB-C. Oplader medfølger.</li>
+            <li>Mulighed for at parre op til 3 andre LUMINA One-enheder.</li>
+            <li>
+              Social Connect gør det nemt at blande din playliste med andres via
+              appen.
+            </li>
+            <li>Stof-totebag i 100 % genanvendt bomuld medfølger.</li>
+          </ul>
+        </details>
+      </div>
     </section>
 
     <section class="split-section">
       <div class="split-text">
         <h1 class="headline-left">Nyhed</h1>
         <h2 class="headline-sub">SOCIAL CONNECT</h2>
-        <p>Social Connect er en smart og intuitiv funktion, der gør det let for dig og dine venner at kombinere jeres musiksmag i én fælles playliste – direkte i Lumina app’en. 
+        <p>
+          Social Connect er en smart og intuitiv funktion, der gør det let for
+          dig og dine venner at kombinere jeres musiksmag i én fælles playliste
+          – direkte i Lumina app’en. I stedet for at én person står for musikken
+          til en fest eller et socialt arrangement, kan alle deltagere tilføje
+          deres yndlingssange og påvirke stemningen i rummet.
+        </p>
 
-I stedet for at én person står for musikken til en fest eller et socialt arrangement, kan alle deltagere tilføje deres yndlingssange og påvirke stemningen i rummet. </p>
-
-<p> Når playlisterne “blendes”, analyserer app’en musiksmag, genrevalg, tempo og stemning, og skaber en dynamisk, balanceret playliste, der repræsenterer alles favoritter. 
-
-Appen er gratis og tilgængelig i App Store og Google Play.</p>
+        <p>
+          Når playlisterne “blendes”, analyserer app’en musiksmag, genrevalg,
+          tempo og stemning, og skaber en dynamisk, balanceret playliste, der
+          repræsenterer alles favoritter. Appen er gratis og tilgængelig i App
+          Store og Google Play.
+        </p>
       </div>
       <div class="split-image">
-        <img src="images/socialconnect2.png" alt="Lumina Bloom">
+        <img src="images/socialconnect2.png" alt="Lumina Bloom" />
       </div>
     </section>
 
-   <section class="gallery-section">
-    <h1>FOLLOW US ON SOCIAL</h1>
+    <section class="gallery-section">
+      <h1>FOLLOW US ON SOCIAL</h1>
 
-    <div class="gallery-grid">
-
+      <div class="gallery-grid">
         <!-- Top row -->
-        <img src="images/luminarose.png" class="gallery-image">
-        <img src="images/instabillede2.png" class="gallery-image">
+        <img src="images/luminarose.png" class="gallery-image" />
+        <img src="images/instabillede2.png" class="gallery-image" />
 
         <div class="instagram-box">
-            <a href="https://www.instagram.com" target="_blank" class="insta-link" style="text-decoration: none;">FOLLOW US ON INSTAGRAM →</a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="insta-link"
+            style="text-decoration: none"
+            >FOLLOW US ON INSTAGRAM →</a
+          >
         </div>
 
         <!-- Bottom row -->
-        <img src="images/picnicinsta.png" class="gallery-image">
-        <img src="images/luminagreen.png" class="gallery-image">
-        <img src="images/beigelum.png" class="gallery-image">
+        <img src="images/picnicinsta.png" class="gallery-image" />
+        <img src="images/luminagreen.png" class="gallery-image" />
+        <img src="images/beigelum.png" class="gallery-image" />
+      </div>
 
-    </div>
-
-    <section class="subscribe-section">
+      <section class="subscribe-section">
         <h1>SUBSCRIBE</h1>
         <p class="subtext">
-            Tilmeld dig vores nyhedsbrev og modtag<br>
-            en velkomstbonus og andre eksklusive rabatter.
+          Tilmeld dig vores nyhedsbrev og modtag<br />
+          en velkomstbonus og andre eksklusive rabatter.
         </p>
 
         <div class="input-wrapper">
-            <input type="email" placeholder="Dinmail@gmail.com">
-            <button>Tilmeld</button>
+          <input type="email" placeholder="Dinmail@gmail.com" />
+          <button>Tilmeld</button>
         </div>
-    </section>
-   
-
+      </section>
     </section>
 
     <footer id="kontakt">
-        <div class="footer-content">
-            <div>
-                <h3>Kundeservice</h3>
-                <ul>
-                    <li>Kontakt os</li>
-                    <li>Spørgsmål og svar</li>
-                    <li>Retur og reklamation</li>
-                    <li>Levering</li>
-                    <li>Handelsbetingelser</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Om Lumina</h3>
-                <ul>
-                    <li>Om os</li>
-                    <li>Produktanmeldelser</li>
-                    <li>Cookies</li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div>
+          <h3>Kundeservice</h3>
+          <ul>
+            <li>Kontakt os</li>
+            <li>Spørgsmål og svar</li>
+            <li>Retur og reklamation</li>
+            <li>Levering</li>
+            <li>Handelsbetingelser</li>
+          </ul>
         </div>
 
-        <div class="payment-icons">
-            <img src="images/mp.png" alt="">
-            <img src="images/klarna.png" alt="">
-            <img src="images/visa.png" alt="">
-            <img src="images/mastercard.png" alt="">
-            <img src="images/applepay.png" alt="">
+        <div>
+          <h3>Om Lumina</h3>
+          <ul>
+            <li>Om os</li>
+            <li>Produktanmeldelser</li>
+            <li>Cookies</li>
+          </ul>
         </div>
+      </div>
 
-        <p class="copyright">© 2025 Lumina Audio</p>
+      <div class="payment-icons">
+        <img src="images/mp.png" alt="" />
+        <img src="images/klarna.png" alt="" />
+        <img src="images/visa.png" alt="" />
+        <img src="images/mastercard.png" alt="" />
+        <img src="images/applepay.png" alt="" />
+      </div>
 
-        <div class="socials">
-            <img src="images/tiktok.svg" alt="">
-            <img src="images/fb.svg" alt="">
-            <img src="images/insta.svg" alt="">
-        </div>
+      <p class="copyright">© 2025 Lumina Audio</p>
+
+      <div class="socials">
+        <img src="images/tiktok.svg" alt="" />
+        <img src="images/fb.svg" alt="" />
+        <img src="images/insta.svg" alt="" />
+      </div>
     </footer>
-  
+
     <script src="script.js"></script>
-    
- </body>
+  </body>
 </html>
