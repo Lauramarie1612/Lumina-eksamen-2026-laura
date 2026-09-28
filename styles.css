@@ -695,7 +695,7 @@ footer {
   width: calc(100% - 20px);
   position: relative;
   box-sizing: border-box;
-  padding: 50px 6% 80px;
+  padding: 50px 6% 14px;
   background-color: var(--footer-field-color);
   color: #342f2b;
   border-radius: 18px 18px 0 0;
@@ -789,44 +789,60 @@ footer {
     line-height: 1;
 }
 
-/* Payment methods */
+/* Footerens bundlinje */
+.footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 24px;
+    border-top: 1px solid #716e68;
+    padding-top: 12px;
+    margin-top: 40px;
+}
+
 .payment-icons {
-  position: absolute;
-  left: 70px;            
-  bottom: 1px;          
-  display: flex;
-  gap: 15px;
-  margin: 0;
-  z-index: 10;
-  align-items: center;
-  transform: none;       
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
 }
 
 .payment-icons img {
-  height: 30px;
+    display: block;
+    width: auto;
+    height: 22px;
+    max-width: 58px;
+    object-fit: contain;
 }
 
-.payment-icons img[src*="mp.png"]  { height: 40px; }
-.payment-icons img[src*="applepay.png"] { height: 30px; }
-
-/* Mobile adjustment — move closer to the edge */
-@media (max-width: 480px) {
-  .payment-icons { left: 16px; bottom: 12px; gap: 10px; }
-  .payment-icons img { height: 26px; }
-}
-
-
-/* Copyright */
 footer .copyright {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10px;       
-  margin: 0;
-  font-size: 14px;
-  opacity: 0.7;
-  text-align: center;
-  z-index: 5;
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.footer-legal {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+    .footer-bottom {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .footer-bottom .payment-icons,
+    .footer-legal {
+        justify-content: center;
+    }
 }
 
 /* Social icons */
