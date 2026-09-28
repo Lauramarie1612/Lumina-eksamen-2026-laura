@@ -891,6 +891,8 @@ body {
 }
 
 .about-container {
+    display: block;
+    flex: 0 0 auto;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
