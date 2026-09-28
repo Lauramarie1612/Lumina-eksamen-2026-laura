@@ -563,12 +563,25 @@ body {
 @media (max-width: 700px) {
   .split-section {
     flex-direction: column;
-    text-align: center;
-    padding: 0 20px;
-    margin: 40px auto;
+    gap: 28px;
+    text-align: left;
+    padding: 32px 24px 40px;
+    margin: 0 auto;
+  }
+  .split-text,
+  .split-image {
+    flex: none;
+    width: 100%;
+    max-width: 460px;
   }
   .split-text p {
-    margin: 0 auto 24px;
+    margin-bottom: 24px;
+  }
+  .split-text p:last-child {
+    margin-bottom: 0;
+  }
+  .split-image img {
+    max-width: 380px;
   }
 }
 
