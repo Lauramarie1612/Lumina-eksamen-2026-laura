@@ -764,16 +764,17 @@ footer .copyright {
 }
 
 /* Social icons */
-.socials {
-    position: absolute;
-    right: 50px;
-    bottom: 10px;
+.footer-social li {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 12px;
 }
 
-.socials img {
-    height: 35px;
+.footer-social svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    fill: currentColor;
 }
 
 
